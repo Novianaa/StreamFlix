@@ -1,9 +1,3 @@
-.poppins-400 {
-  font-family: 'poppins';
-  font-weight: 400px;
-  color: #3f371b;
-}
-
 .wrapper-nav {
   font-size: 30px;
   font-family: 'Nova Round', cursive;
@@ -43,6 +37,17 @@ section {
 .wrapper-movie-list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.custom-col {
+  width: 25%;
+}
+
+.font-title {
+  font-family: 'poppins';
+  font-weight: 400px;
+  color: #3f371b;
 }
 
 .card-list-movie {
@@ -51,11 +56,12 @@ section {
   padding: 1%;
   margin: 3%;
   height: 480px;
-
 }
 
 .card-list-content-text {
   margin: 10% 0;
+  font-family: 'poppins';
+  font-weight: 400px;
 }
 
 .poster {
@@ -135,4 +141,26 @@ section {
   background-color: #e1dab1;
   color: #3f371b;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .custom-col {
+    width: 33%;
+  }
+
+  .card-list-movie {
+    padding: 0 2%;
+    margin: 3%;
+    height: 365px;
+    font-size: 14px;
+  }
+
+  .font-title {
+    font-size: 14px;
+  }
+
+  .btn-custom {
+    font-size: 14px;
+  }
+
 }

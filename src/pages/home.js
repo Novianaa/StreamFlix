@@ -47,11 +47,11 @@ function Home() {
             <div className="wrapper-movie-list">
               {data.results?.map((item) => {
                 return (
-                  <div className=" text-center col-3">
+                  <div className=" text-center custom-col">
                     <div className="card-list-movie">
                       <div className="card-list-content-text ">
                         <img crossOrigin="anonymous" src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} className="poster" alt={item.title} />
-                        <h6 className="fw-bold poppins-400 m-2">{item.title}</h6>
+                        <h6 className="fw-bold font-title m-2">{item.title}</h6>
                         <p className="poppins-400 text-muted">{item.vote_average > 8 ? 'Rp. 21.250' : item.vote_average > 6 && item.vote_average < 8 ? 'Rp. 16.350' : item.vote_average > 3 && item.vote_average < 6 ? 'Rp. 8.250' : 'Rp. 3.500'}</p>
                         <Link to='/detail' className='text-decoration-none'>
                           <div className='btn-custom fw-bold'>Details</div>
